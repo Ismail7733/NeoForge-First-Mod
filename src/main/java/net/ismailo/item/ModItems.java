@@ -11,8 +11,8 @@ public class ModItems {
     // Create a Deferred Register to hold Items which will all be registered under the "testmod" namespace
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TestMod.MODID);
 
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+    public static final DeferredItem<Item> BANANA = ITEMS.registerSimpleItem("banana", new Item.Properties().food(new FoodProperties.Builder()
+            .alwaysEdible().nutrition(2).saturationModifier(2f).build()));
 
     public static void register(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
